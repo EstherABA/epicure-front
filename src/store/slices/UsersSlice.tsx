@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const presentUsers = async () => { 
     try{
-        const response = await axios.get('https://epicure-server-97fs.onrender.com/api/users/');
+        const response = await axios.get('https://epicure-server-97fs.onrender.com/api/users');
         return (response.data)
     } catch (error) {
         console.log('There was an error get all user data from db', error);

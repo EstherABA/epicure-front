@@ -1,0 +1,56 @@
+.card{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-image{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 18px;
+}
+.restaurant-name{
+    font-family: 'Helvetica Neue Medium';
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 2.67px;
+    margin-bottom: 8px;
+}
+.chef-name{
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.97px;
+    margin-bottom: 8px;
+}
+
+.star-img{
+    width: 200px;
+}
+.ingredients{
+    width: 70%;
+    height: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue Medium";
+}
+.currency{
+    position: absolute;
+    width: 8px;
+    /* height: 30px; */
+    top: 71%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+}

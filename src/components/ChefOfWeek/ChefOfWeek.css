@@ -1,0 +1,30 @@
+.chefs-data-container{
+    display: flex;
+    justify-content: center;
+}
+.chef-restaurants{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:40px;
+    background-color: #F9F4EA;
+    margin-left: 300px;
+    width: 51.5%;
+    height: 60%;
+}
+.title-of-the-week{
+    text-align: left;
+    margin: 50px 0 10px 300px;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    font-size: 24px;
+}
+#description{
+    font-family: 'Helvetica Neue Thin';
+    width:30%;
+    font-size: 24px;
+    margin-left: 80px;
+    line-height: 35px;
+    text-align: justify;
+    letter-spacing: 1.25px; 
+}

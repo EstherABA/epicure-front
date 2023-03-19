@@ -1,0 +1,53 @@
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    position:sticky;
+    z-index: 3;
+    top:0;
+    gap: 290px;
+    width: 100%;
+    height: 8%;
+    background-color: white;
+}
+.side{
+    margin: 15.5px 127px 16.5px 127px;
+    align-items: center;
+}
+.left{
+    display: flex;
+    gap: 32px;
+    margin-left:90px ;
+}
+.right{
+    display: flex;
+    gap: 24.5px;
+}
+.search-bar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 80%;
+    height: 40px;
+    border: 0.5px solid #000000;
+    border-radius: 400px;
+}
+.input-nav-bar{
+    font-size: 18px;
+    line-height: 22px;
+    height: 21px;
+    width: 290px;
+    flex-grow: 1;
+    padding: 10px 0 0 0;
+    margin: 2px 0 0 10px;
+    font-size: 15px;
+    letter-spacing: 1.29px;
+    border: 0;
+    cursor: pointer;
+}
+.input :focus{
+    border: 0;
+}
+
+

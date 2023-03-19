@@ -1,0 +1,11 @@
+.all-chefs{
+    display: grid;
+    grid-template-columns:430px 430px 430px ;
+    grid-template-rows:360px 360px 360px ;
+    gap: 10px 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+#none-description{
+    display: none;
+}

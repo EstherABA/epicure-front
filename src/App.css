@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue Thin";
+  color: #000000;
+  box-sizing: border-box;
+
+}
+input{
+  outline: none;
+}
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url(./assets/font-epicure/Helvetica-Neu-Bold.ttf);
+}
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url(./assets/font-epicure/HelveticaNeue-Medium.ttf);
+}
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url(./assets/font-epicure/HelveticaNeue-Light.ttf);
+}
+@font-face {
+  font-family: "Helvetica Neue Thin";
+  src: url(./assets/font-epicure/HelveticaNeue-Thin.ttf);
+}
+
+

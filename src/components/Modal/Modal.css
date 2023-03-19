@@ -1,0 +1,114 @@
+/* body.active-modal {
+    overflow-y: hidden;
+} */
+
+/* .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+} */
+
+.modal, .overlay {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 4;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    /* display: flex; */
+    display: inline-table;
+    flex-direction: column;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    border-radius: 3px;
+    height: 500px; 
+    width: 500px;
+    z-index: 4;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    left:26%;
+    z-index: 4;
+}
+.dish-modal{
+    font-size: 14px;
+    width: 100%;
+    height: 380px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+}
+.dish-modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-part{
+    margin-bottom: 10px;
+}
+
+.add-to-bag{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px 24px;
+    width: 206px;
+    height: 48px;
+    background: #000000;
+    border: 1px solid #000000;
+    color: white;
+}
+
+.with-line{
+    text-decoration: underline;
+    text-decoration-color: #DE9200;
+    font-size:20px; 
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+}
+.quantity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.quantity-title{
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+}
+.quantity{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:30px;
+    height: 25%;
+}
+button{
+    all:unset
+}
+label{
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px; 
+}

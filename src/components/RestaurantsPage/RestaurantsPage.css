@@ -1,0 +1,16 @@
+.restaurants-container{
+    display: grid;
+    grid-template-columns:400px 400px 400px ;
+    grid-template-rows:450px 450px 450px ;
+    gap: 20px 40px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.one-restaurant{
+    gap:10px ;
+    height: 90%;
+    background-color: #F9F4EA;
+    font-size: 22px;
+    cursor: pointer ;
+}

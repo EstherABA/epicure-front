@@ -1,0 +1,9 @@
+.sing-up-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+    height: 580px;
+    font-size: 24px;
+}

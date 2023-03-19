@@ -1,0 +1,109 @@
+.sing-in-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:48px;
+    height: 582px;
+    font-size: 24px;
+}
+.sign-in-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.sign-in-title{
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+}
+.sign-in-sub-title{
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.97px;
+}
+.form-sign-in{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.form-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+
+}
+.filed-holder{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* .input-sign-in{
+    color: #000000;
+    height: 18px;
+    width: 360px;
+    border: 0;
+    border-bottom: 0.5px solid #979797; ;
+    outline: none;
+} */
+
+.label-sign-in{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.input-sign-in,
+.label-sign-in{
+    color: #000000;
+    height: 34px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.97px;
+    transition: .3s ease-in-out;
+}
+
+.input-sign-in:focus + .label-sign-in {
+    font-size: 14px;
+    top:-25px;
+    pointer-events: none;
+    color: #979797;
+}
+.btn-form-sign-in{
+    width: 206px;
+    height: 48px;
+    padding: 5px 24px;
+    color: white;
+    background: #979797; 
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;   
+}
+.forget-password{
+    font-family: "Helvetica Neue Medium";
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+}
+.btn-form-sign-up{
+    font-family: "Helvetica Neue Medium";
+    width: 206px;
+    height: 48px;
+    padding: 5px 15px;
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    text-transform: uppercase; 
+}

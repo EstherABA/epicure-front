@@ -17,13 +17,10 @@ const NavBar: React.FC = () => {
     const AllUsers = useSelector(
         (state:RootState) => state.users.value
     );
-    console.log(AllUsers, "user FIRST state from NAVBAR");
 
     const handleUserSigning = useMemo(() => {
         if (Object.keys(AllUsers).length === 2) {
-            console.log(AllUsers, "user SECOND state from NAV");
-            
-            return <div>Hello {AllUsers.firstName} </div>;
+            return <div>Hello {AllUsers[0].firstName} </div>;
         }
             return null
     }, [AllUsers]);

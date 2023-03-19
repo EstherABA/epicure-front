@@ -6,7 +6,7 @@ const presentRestaurants = async () => {
     console.log("presentRestaurants");
     
     try{
-        const response = await fetch('http://localhost:8000/api/restaurants',{
+        const response = await fetch('https://epicure-server-97fs.onrender.com/api/restaurants',{
             method: 'GET',
     });
         const data = await response.json();
@@ -34,7 +34,7 @@ export const RestaurantsSlice = createSlice({
                     break;
                 case "new":
                     state.value = restaurantsAllData
-                    state.value = state.value.filter((restaurant:IRestaurant) => restaurant.isNew === true); 
+                    state.value = state.value.filter((restaurant:IRestaurant) => restaurant.isNewRes === true); 
                     break;
                 case "mostPopular":
                     state.value = restaurantsAllData

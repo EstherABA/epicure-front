@@ -19,7 +19,7 @@ const SingInPage: React.FC = () => {
     const [countSignIn, setCountSignIn] = useState(0);
     
     useEffect(() => {
-        if (countSignIn>=1){
+        if (countSignIn >= 1){
             fetch('http://localhost:8000/api/users/login', {
             method: 'POST',
             headers: {'Content-type': 'application/json; charset=utf-8'},
@@ -44,7 +44,7 @@ const SingInPage: React.FC = () => {
         let email = event.target[0].value
         let password =  event.target[1].value
         setInfoUserLogin({ email, password })
-        setCountSignIn(prevCount => prevCount + 1)
+        setCountSignIn((prevCount) => prevCount + 1)
     }
 
     return ( <>

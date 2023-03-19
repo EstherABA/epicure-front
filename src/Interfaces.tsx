@@ -52,7 +52,7 @@ export interface IRestaurant {
     address:string ,
     rating: string,
     isPopular: boolean,
-    isNew: boolean,
+    isNewRes: boolean,
     mostPopular: boolean,
     openHour: number,
     closeHour: number,
@@ -70,7 +70,7 @@ export interface IChef {
     restaurants: Array<string>,
     isChefOfTheWeek:boolean, 
     description: string,
-    isNew: boolean,
+    isNewChef: boolean,
     viewCount: number,
     mostViewed: boolean,
 }

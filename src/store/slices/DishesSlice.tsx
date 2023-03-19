@@ -3,7 +3,7 @@ import {IDishesState} from '../../Interfaces';
 
 const presentDishes = async () => { 
     try{
-        const response = await fetch('http://localhost:8000/api/dishes',{
+        const response = await fetch('https://epicure-server-97fs.onrender.com/api/dishes',{
             method: 'GET',
     });
         const data = await response.json();

@@ -4,7 +4,7 @@ import axios from "axios";
 
 const presentChefs = async () => { 
     try{
-        const response = await axios.get('http://localhost:8000/api/chefs')
+        const response = await axios.get('https://epicure-server-97fs.onrender.com/api/chefs')
         const data = await response.data;
         return data ;  
     } catch (error) {

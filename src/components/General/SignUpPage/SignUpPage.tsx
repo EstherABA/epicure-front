@@ -24,7 +24,7 @@ const SignUpPage:React.FC = () => {
   );
 
   useEffect(() => {
-    if (count>=1){
+    if (count >= 1) {
       fetch('http://localhost:8000/api/users/register', {
       method: 'POST',
       headers: {'Content-type': 'application/json; charset=utf-8'},
@@ -32,6 +32,8 @@ const SignUpPage:React.FC = () => {
       })
       .then((response)=> response.json())
       .then((data) => {
+        console.log(data);
+        
         dispatch(presentUserName(data));
         returnUserToSignIn();
       })
@@ -41,8 +43,6 @@ const SignUpPage:React.FC = () => {
     }
   },[infoUserSignUp,count]);
   
-  
-
   const handleSubmit = async (evt:any)=> {
     evt.preventDefault();
     setInfoUserSignUp({
@@ -52,7 +52,8 @@ const SignUpPage:React.FC = () => {
       email: evt.target[3].value,
       password: evt.target[4].value
     })
-    setCount(prevCount => prevCount + 1)
+    setCount((prevCount) => prevCount + 1)
+
   }
 
   return ( 

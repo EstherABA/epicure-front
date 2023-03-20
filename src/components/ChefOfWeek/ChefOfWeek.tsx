@@ -30,7 +30,7 @@ const ChefOfWeek: React.FC = () => {
             <div className='chef-restaurants'>
                 { 
                     chef.restaurants.map((restaurant:string)=> <CardGeneral 
-                        class= {'restaurantP-card'}
+                        class= {'chef-week-restaurant-card'}
                         ImgSrc={require(`../../assets/images/${restaurant}.png`)} ImgAlt={restaurant} name={restaurant} />)
                 }
             </div>

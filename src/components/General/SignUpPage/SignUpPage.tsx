@@ -25,7 +25,7 @@ const SignUpPage:React.FC = () => {
 
   useEffect(() => {
     if (count >= 1) {
-      fetch('http://localhost:8000/api/users/register', {
+      fetch('https://epicure-server-97fs.onrender.com/api/users/register', {
       method: 'POST',
       headers: {'Content-type': 'application/json; charset=utf-8'},
       body: JSON.stringify(infoUserSignUp)

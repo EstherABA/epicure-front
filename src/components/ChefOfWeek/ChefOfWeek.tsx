@@ -1,10 +1,11 @@
 import React from 'react';
-import HomeCard from '../General/CardGeneral/CardGeneral';
+import CardGeneral from '../General/CardGeneral/CardGeneral';
 import './ChefOfWeek.css';
 import ChefPortraitCard from '../General/ChefPortraitCard/ChefPortraitCard';
 import { IChef, IRestaurant} from '../../Interfaces'; 
 import { RootState } from '../../store/Store';
 import { useSelector } from 'react-redux';
+import res from '../../assets/images/claro.png'
 
 
 
@@ -28,7 +29,9 @@ const ChefOfWeek: React.FC = () => {
             <p className=' title-of-the-week'>{`${chef.name} Restaurants:` } </p>
             <div className='chef-restaurants'>
                 { 
-                    chef.restaurants.map((restaurant:string)=> <HomeCard ImgSrc={require(`../../assets/images/${restaurant}.png`)} ImgAlt={restaurant} name={restaurant} />)
+                    chef.restaurants.map((restaurant:string)=> <CardGeneral 
+                        class= {'card-image'}
+                        ImgSrc={require(`../../assets/images/${restaurant}.png`)} ImgAlt={restaurant} name={restaurant} />)
                 }
             </div>
             </>

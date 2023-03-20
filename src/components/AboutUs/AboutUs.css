@@ -36,16 +36,28 @@
     justify-content:flex-end;
 }
 @media (max-width: 390px) {
-    .all-content-aboutUs {
-        margin: 20px 0 0 10px;
-
-    }
     .aboutUs-container {
         margin: 20px 0 0 10px;
+        width: 95vw;
+        height: 70vh;
+    }
+    .all-content-aboutUs {
+        margin: 20px 0 0 10px;
+        width: 95vw;
+        
     }
     .description-aboutUs {
         font-size: 18px;
         width: 335px;
         height: 252px;
+    }
+    .aboutUs-epicure-logo{
+        display: none;
+    }
+    .aboutUs-download-btn{
+        display: none;
+    }
+    .footer-container {
+        display: none;
     }
 }

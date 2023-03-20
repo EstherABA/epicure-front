@@ -42,3 +42,10 @@
 .chef-container:hover{
     cursor: pointer;
 }
+
+@media (max-width: 390px) {
+    .chef-img {
+        width: 353px;
+    }
+    
+}

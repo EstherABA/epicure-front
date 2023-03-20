@@ -28,7 +28,7 @@ const ChefOfWeek: React.FC = () => {
             <p className=' title-of-the-week'>{`${chef.name} Restaurants:` } </p>
             <div className='chef-restaurants'>
                 { 
-                    chef.restaurants.map((restaurant:string)=> <HomeCard ImgSrc={require(`../../${`../../assets/images/${restaurant}.svg`}`)} ImgAlt={restaurant} name={restaurant} />)
+                    chef.restaurants.map((restaurant:string)=> <HomeCard ImgSrc={require(`../../assets/images/${restaurant}.png`)} ImgAlt={restaurant} name={restaurant} />)
                 }
             </div>
             </>

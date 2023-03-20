@@ -30,3 +30,8 @@
     width: 100%;
     height: 100px;
 }
+@media (max-width: 390px) {
+    .all-restaurant-btn {
+        margin-left: 0px;
+    }
+}

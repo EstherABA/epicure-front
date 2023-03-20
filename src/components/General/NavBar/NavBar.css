@@ -50,4 +50,30 @@
     border: 0;
 }
 
+@media (max-width: 390px) {
+    .search-bar{
+        /* position: relative; */
+        display: none;
+        /* flex-direction: row;
+        gap: 0;
+        width: 80%;
+        height: 40px; */
+        /* border: 0.5px solid #000000; */
+        /* border-radius: 400px; */
+    }
+    .left{
+        display: flex;
+        /* gap: 32px; */
+        /* margin-left:90px ; */
+    }
+    .right{
+        display: flex;
+    }
+    .btn-title {
+        display: none;
+    }
+    .side {
+        align-items: center;
+    }
+}
 

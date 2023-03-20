@@ -64,3 +64,25 @@
     letter-spacing: 1.29px;
     font-family: 'Helvetica Neue Thin';
 }
+
+@media (max-width: 390px) {
+    .description-box {
+        font-size: 22px;
+        height: 52%;
+        width: 90%;
+        line-height: 30px;
+    }
+    .hero-container{
+        height: 34vh;
+
+    }
+    .search-input {
+        width: 90%;
+    }
+    .input-hero{
+        font-size: 14px;
+    }
+
+
+
+}

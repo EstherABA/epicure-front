@@ -35,3 +35,15 @@
     display: flex;
     justify-content:flex-end;
 }
+@media (max-width: 390px) {
+    .all-content-aboutUs {
+        margin: 20px 0 0 10px;
+
+    }
+    .aboutUs-container {
+        margin: 20px 0 0 10px;
+    }
+    .description-aboutUs {
+        font-size: 18px;
+    }
+}

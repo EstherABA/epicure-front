@@ -20,7 +20,7 @@ const ChefsPage: React.FC = () => {
     const dispatch = useDispatch ();
     
     const deleteRequest = async (e:any,chefId:number) => {
-        await fetch('http://localhost:8000/api/chefs/delete', {
+        await fetch('https://epicure-server-97fs.onrender.com/api/chefs/delete', {
             method: 'DELETE',
             headers: {'Content-type': 'application/json; charset=utf-8'},
             body: JSON.stringify({id:chefId})

@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
 
     const handleUserSigning = useMemo(() => {
         if (Object.keys(AllUsers).length === 2) {
-            return <div>Hello {AllUsers.firstName} </div>;
+            return <div>Hello {AllUsers[0].firstName} </div>;
         }
             return null
     }, [AllUsers]);

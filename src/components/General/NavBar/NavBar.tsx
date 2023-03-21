@@ -18,12 +18,12 @@ const NavBar: React.FC = () => {
         (state:RootState) => state.users.value
     );
 
-    const handleUserSigning = useMemo(() => {
+    const handleUserSigning = () => {
         if (Object.keys(AllUsers).length === 2) {
             return <div>Hello {AllUsers[0].firstName} </div>;
         }
             return null
-    }, [AllUsers]);
+    };
     
 
       

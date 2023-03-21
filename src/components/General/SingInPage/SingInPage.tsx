@@ -27,6 +27,7 @@ const SingInPage: React.FC = () => {
             })
             .then((response)=> response.json())
             .then((data) => {
+                console.log(data, ":::data");
                 dispatch(presentUserName(data));
                 returnUserToHOmePage();
             })
@@ -36,10 +37,7 @@ const SingInPage: React.FC = () => {
         }
     },[infoUserLogin,countSignIn]);
         
-    const returnUserToHOmePage = ()=> {
-        console.log("hi");
-        
-        navigate("/")};
+    const returnUserToHOmePage = ()=>{navigate("/")};
     
     const handleSubmit = (event:any)=> {
         event.preventDefault()

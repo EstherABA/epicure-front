@@ -21,6 +21,8 @@ export const UsersSlice = createSlice({
     reducers: {
         presentUserName: (state, action) => {
             const userRegisterData = action.payload;
+            console.log(userRegisterData, "userRegisterData");
+            
             state.value = usersAllData
             state.value = 
                 { 

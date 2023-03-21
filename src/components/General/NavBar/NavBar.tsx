@@ -1,4 +1,4 @@
-import React , { useMemo } from 'react';
+import React , { useEffect, useMemo } from 'react';
 import './NavBar.css'
 import ButtonG from '../ButtonGeneral/ButtonG'
 import logoEpicure from '../../../assets/icon/logoEpicure.svg'
@@ -18,15 +18,12 @@ const NavBar: React.FC = () => {
         (state:RootState) => state.users.value
     );
 
-    const handleUserSigning = useMemo(() => {
+    useEffect(():any => {
         if (Object.keys(AllUsers).length === 2) {
             return <div>Hello{AllUsers[0].firstName} </div>;
         }
             return null
     }, [AllUsers]);
-    
-
-      
    
     return (
         <div className='nav-bar'> 
@@ -36,7 +33,7 @@ const NavBar: React.FC = () => {
                 <ButtonG  anotherClass='btn-with-line' title='Chefs' onClick={()=> navigate("/chefs")} />
             </div>
                 {
-                    <>{handleUserSigning}</>
+                    <>{AllUsers}</>
                 }
             <div className='side right'>
                 <div className='search-bar'>

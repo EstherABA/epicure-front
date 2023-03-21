@@ -56,14 +56,8 @@
 
     }
     .search-bar{
-        /* position: relative; */
         display: none;
-        /* flex-direction: row;*/
         gap: 0;
-        /* width: 80%; */
-        /* height: 40px;  */
-        /* border: 0.5px solid #000000; */
-        /* border-radius: 400px; */
     }
     .left{
         display: flex;

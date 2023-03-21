@@ -17,6 +17,8 @@ const Modal: React.FC<IModal> = (props:IModal) => {
                     return dishObj.id === props.selectedDishId
                 })[0];
     const handleCloseModal = () => {
+        console.log("hi");
+        
         setModal(false)
     }
     const handlePlusClick = ()=>{

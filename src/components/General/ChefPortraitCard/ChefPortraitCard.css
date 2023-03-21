@@ -2,7 +2,6 @@
     position: relative;
     width: 381px;
     height: 355px;
-    /* display: flex; */
     flex-direction: row;
     justify-content: center;
 }
@@ -28,8 +27,6 @@
     position: absolute;
     color: yellow;
     font-size: 24px;
-    /* width: 381px; */
-    /* height: 100px; */
     top: 0;
     left: 0;
     text-align: left;

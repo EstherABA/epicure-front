@@ -54,3 +54,8 @@
     left: 43%;
     transform: translate(-50%,-50%);
 }
+@media (max-width: 390px) {
+    .restaurant-name {
+        font-size: 20px;
+    }
+}

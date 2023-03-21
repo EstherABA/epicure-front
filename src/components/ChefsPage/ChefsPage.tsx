@@ -44,7 +44,7 @@ const ChefsPage: React.FC = () => {
         src={require(`../../${chef.portrait}`)} 
         alt={`${chef.name}`} 
         name={`${chef.name}`} 
-        deleteCardBtn = {"delete"}
+        deleteCardBtn = {"X"}
         idDescription= {"none-description"}
         onClickDelete= {(e)=>{deleteRequest(e,chef.id)}}
         />

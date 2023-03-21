@@ -6,7 +6,7 @@
 }
 .open-now{
     position: absolute;
-    top: 26%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 21px;
@@ -39,6 +39,8 @@
     margin-top: 45px;
 }
 .dishes-container{
+    
+    margin-top: 45px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4,280px);

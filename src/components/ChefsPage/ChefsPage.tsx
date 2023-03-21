@@ -6,10 +6,9 @@ import Footer from '../General/Footer/Footer';
 import {useSelector, useDispatch} from "react-redux";
 import { RootState } from '../../store/Store';
 import { IChef } from '../../Interfaces';
-import axios from 'axios';
 import './ChefsPage.css'
+import p from "../../assets/images/chefs/avivMoshe.png"
 import { updateDataAfterDeleteChefs } from '../../store/slices/ChefsSlice';
-import { METHODS } from 'http';
 
 
 
@@ -17,6 +16,8 @@ const ChefsPage: React.FC = () => {
     const AllChefs = useSelector(
         (state:RootState) => state.chefs.value
     );
+    console.log(AllChefs, "All chefs");
+    
     const dispatch = useDispatch ();
     
     const deleteRequest = async (e:any,chefId:number) => {
@@ -45,9 +46,7 @@ const ChefsPage: React.FC = () => {
         name={`${chef.name}`} 
         deleteCardBtn = {"delete"}
         idDescription= {"none-description"}
-        onClickDelete= {(e)=>{console.log("delte button FUN", chef.id);
-        
-            deleteRequest(e,chef.id)}}
+        onClickDelete= {(e)=>{deleteRequest(e,chef.id)}}
         />
     })
 

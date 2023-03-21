@@ -23,7 +23,7 @@ export const UsersSlice = createSlice({
             const userRegisterData = action.payload;
             console.log(userRegisterData, "userRegisterData");
             
-            state.value = usersAllData
+            // state.value = usersAllData
             state.value = 
                 { 
                 firstName: userRegisterData.firstName,

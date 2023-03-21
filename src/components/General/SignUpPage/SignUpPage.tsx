@@ -17,11 +17,12 @@ const SignUpPage:React.FC = () => {
   })
   const [count, setCount] = useState(0);
   const navigate = useNavigate();
-  const dispatch = useDispatch ();
+  const dispatch = useDispatch();
+
   const returnUserToSignIn = ()=>{navigate("/sign-in")};
-  const AllUsers = useSelector(
-    (state:RootState) => state.users.value
-  );
+  // const AllUsers = useSelector(
+  //   (state:RootState) => state.users.value
+  // );
 
   useEffect(() => {
     if (count >= 1) {

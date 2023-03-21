@@ -43,7 +43,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4,280px);
-    grid-template-rows: repeat(4,240px);
+    grid-template-rows: repeat(4,426px);
     gap: 30px;
 }
 .dish-card{
@@ -52,6 +52,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 272px;
-    height: 239.77px;
+    height: 442.77px;
 }
 

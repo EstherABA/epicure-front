@@ -68,7 +68,7 @@
         display: flex;
     }
     .btn-title {
-        display: none;
+        /* display: none; */
     }
     .side {
         align-items: center;

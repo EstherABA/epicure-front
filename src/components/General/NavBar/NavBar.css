@@ -53,11 +53,11 @@
 @media (max-width: 390px) {
     .nav-bar{
         height: 15%;
+        gap: 30px;
 
     }
     .search-bar{
         display: none;
-        gap: 30px;
     }
     .left{
         display: flex;

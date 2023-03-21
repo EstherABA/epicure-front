@@ -72,7 +72,7 @@ const Modal: React.FC<IModal> = (props:IModal) => {
                 </div>
             </div>
         </div>
-                <button className='close-modal' onClick={()=>props.closeModal}>
+                <button className='close-modal' onClick={handleCloseModal}>
                     <img src={Exit}/></button>
         </>
         

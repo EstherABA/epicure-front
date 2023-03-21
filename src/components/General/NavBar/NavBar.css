@@ -57,7 +57,7 @@
     }
     .search-bar{
         display: none;
-        gap: 0;
+        gap: 30px;
     }
     .left{
         display: flex;
